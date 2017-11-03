@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  
+  <!-- 
+	 create a form that submits:
+	 
+		first name
+		last name
+		email address
+		password
+		
+	to http://posttestserver.com/post.php via post method. 
+	
+	All of the input fields should be filled when the form is submitted.
+	
+	Surround the fields with a fieldset that has a legend entitled "User Details"
+
+ -->
+
+<head>
+	<title>HTML Forms Solution</title>
+</head>
+<body>
+
+<form action="http://posttestserver.com/post.php" method="post">
+	<fieldset>
+
+	<legend>User Details</legend>
+
+	<!--	first name -->
+		<label for="lastname">First name:</label>
+        <input type="text" id="lastname" placeholder="firstname" name="firstname" required>
+        <br>
+        <br>
+
+	<!--	last name -->
+		<label for="firstname">Last name:</label> 
+        <input type="text" id="firstname" placeholder="lastname"  name="lastname" required>
+        <br>
+        <br>
+
+	<!--	email address -->
+  		<label for="email">Email:</label>
+        <input type="email" id="email" placeholder="email" name="email" required>
+        <br>
+        <br>
+
+	<!--	password -->
+  		<label for="password">Password:</label>
+        <input type="password" id="password" placeholder="password" name="password" required>
+        <br>
+        <br>
+
+        <input type="submit" value="Send it!">
+	
+	</fieldset>
+
+</body>
+</html>
+
+ 
+</html>
